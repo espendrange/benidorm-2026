@@ -117,10 +117,16 @@
   .blk{background:var(--surface);border:1px solid var(--rule-soft);
        border-left:3px solid var(--edge,var(--none));border-radius:3px;
        box-shadow:var(--shadow);padding:6px 8px 6px;transition:opacity .15s;}
-  .brk{background:var(--band);border:1px dashed var(--rule);border-radius:3px;
-       padding:5px 8px;text-align:center;}
-  .brk span{font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;
-            text-transform:uppercase;color:var(--ink-3);}
+  .lunchcell{background:var(--band);border-top:1px solid var(--rule);
+             border-bottom:1px solid var(--rule);border-left:1px solid var(--rule-soft);
+             display:flex;align-items:center;justify-content:center;padding:9px 4px;}
+  .lunchcell span{font-family:var(--mono);font-size:.68rem;color:var(--ink-3);
+                  font-variant-numeric:tabular-nums;}
+  .hr.lunchlab{position:sticky;left:0;z-index:3;background:var(--band);pointer-events:none;
+               border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+               display:flex;align-items:center;justify-content:flex-end;padding:0 10px 0 0;
+               font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.06em;
+               text-transform:uppercase;color:var(--ink-3);}
   .blk{position:relative;}
   .blk .open{position:absolute;inset:0;z-index:1;border-radius:3px;}
   .blk .open .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
@@ -408,6 +414,18 @@
       </div>
       <div class="cell" data-ring="11" data-hour="11">
       </div>
+      <div class="hr lunchlab">Lunsj</div>
+      <div class="lunchcell" data-ring="1"><span>13:40&ndash;14:40</span></div>
+      <div class="lunchcell" data-ring="2"><span>13:28&ndash;14:30</span></div>
+      <div class="lunchcell" data-ring="3"><span>13:16&ndash;14:20</span></div>
+      <div class="lunchcell" data-ring="4"><span>13:00&ndash;14:00</span></div>
+      <div class="lunchcell" data-ring="5"><span>12:54&ndash;13:55</span></div>
+      <div class="lunchcell" data-ring="6"><span>12:57&ndash;14:00</span></div>
+      <div class="lunchcell" data-ring="7"><span>13:10&ndash;14:10</span></div>
+      <div class="lunchcell" data-ring="8"><span>12:47&ndash;13:50</span></div>
+      <div class="lunchcell" data-ring="9"><span>12:42&ndash;13:45</span></div>
+      <div class="lunchcell" data-ring="10"><span>12:44&ndash;13:45</span></div>
+      <div class="lunchcell" data-ring="11"><span>12:58&ndash;14:00</span></div>
       <div class="hr" data-hour="12">12:00</div>
       <div class="cell" data-ring="1" data-hour="12">
       </div>
@@ -418,10 +436,8 @@
       <div class="cell" data-ring="4" data-hour="12">
       </div>
       <div class="cell" data-ring="5" data-hour="12">
-        <div class="brk"><span>Lunsj 12:54&ndash;13:55</span></div>
       </div>
       <div class="cell" data-ring="6" data-hour="12">
-        <div class="brk"><span>Lunsj 12:57&ndash;14:00</span></div>
       </div>
       <div class="cell" data-ring="7" data-hour="12">
         <article class="blk" data-clubs="royken-tkd vaernes-tkd" style="--edge:var(--red)">
@@ -436,29 +452,21 @@
         </article>
       </div>
       <div class="cell" data-ring="8" data-hour="12">
-        <div class="brk"><span>Lunsj 12:47&ndash;13:50</span></div>
       </div>
       <div class="cell" data-ring="9" data-hour="12">
-        <div class="brk"><span>Lunsj 12:42&ndash;13:45</span></div>
       </div>
       <div class="cell" data-ring="10" data-hour="12">
-        <div class="brk"><span>Lunsj 12:44&ndash;13:45</span></div>
       </div>
       <div class="cell" data-ring="11" data-hour="12">
-        <div class="brk"><span>Lunsj 12:58&ndash;14:00</span></div>
       </div>
       <div class="hr" data-hour="13">13:00</div>
       <div class="cell" data-ring="1" data-hour="13">
-        <div class="brk"><span>Lunsj 13:40&ndash;14:40</span></div>
       </div>
       <div class="cell" data-ring="2" data-hour="13">
-        <div class="brk"><span>Lunsj 13:28&ndash;14:30</span></div>
       </div>
       <div class="cell" data-ring="3" data-hour="13">
-        <div class="brk"><span>Lunsj 13:16&ndash;14:20</span></div>
       </div>
       <div class="cell" data-ring="4" data-hour="13">
-        <div class="brk"><span>Lunsj 13:00&ndash;14:00</span></div>
       </div>
       <div class="cell" data-ring="5" data-hour="13">
         <article class="blk" data-clubs="alesund-tkd bergen-tkd orkdal-tkd trondheim-tkd" style="--edge:var(--blue)">
@@ -477,7 +485,6 @@
       <div class="cell" data-ring="6" data-hour="13">
       </div>
       <div class="cell" data-ring="7" data-hour="13">
-        <div class="brk"><span>Lunsj 13:10&ndash;14:10</span></div>
       </div>
       <div class="cell" data-ring="8" data-hour="13">
         <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
@@ -1169,9 +1176,20 @@
           </ul>
         </article>
       </div>
+      <div class="hr lunchlab">Lunsj</div>
+      <div class="lunchcell" data-ring="1"><span>12:45&ndash;13:45</span></div>
+      <div class="lunchcell" data-ring="2"><span>12:25&ndash;13:25</span></div>
+      <div class="lunchcell" data-ring="3"><span>12:45&ndash;13:45</span></div>
+      <div class="lunchcell" data-ring="4"><span>12:29&ndash;13:30</span></div>
+      <div class="lunchcell" data-ring="5"><span>12:22&ndash;13:25</span></div>
+      <div class="lunchcell" data-ring="6"><span>12:34&ndash;13:35</span></div>
+      <div class="lunchcell" data-ring="7"><span>12:39&ndash;13:40</span></div>
+      <div class="lunchcell" data-ring="8"><span>12:17&ndash;13:20</span></div>
+      <div class="lunchcell" data-ring="9"><span>13:00&ndash;14:00</span></div>
+      <div class="lunchcell" data-ring="10"><span>12:55&ndash;13:55</span></div>
+      <div class="lunchcell" data-ring="11"><span>12:24&ndash;13:25</span></div>
       <div class="hr" data-hour="12">12:00</div>
       <div class="cell" data-ring="1" data-hour="12">
-        <div class="brk"><span>Lunsj 12:45&ndash;13:45</span></div>
       </div>
       <div class="cell" data-ring="2" data-hour="12">
         <article class="blk" data-clubs="vardo-tkd" style="--edge:var(--red)">
@@ -1183,16 +1201,12 @@
             <li class="red" data-club="vardo-tkd"><span class="num">1</span><span class="nm">Brasøy Sætrum Marte</span><span class="meta">Vardø TKD &middot; <b>ca. 12:04</b> &middot; kamp 1/4</span></li>
           </ul>
         </article>
-        <div class="brk"><span>Lunsj 12:25&ndash;13:25</span></div>
       </div>
       <div class="cell" data-ring="3" data-hour="12">
-        <div class="brk"><span>Lunsj 12:45&ndash;13:45</span></div>
       </div>
       <div class="cell" data-ring="4" data-hour="12">
-        <div class="brk"><span>Lunsj 12:29&ndash;13:30</span></div>
       </div>
       <div class="cell" data-ring="5" data-hour="12">
-        <div class="brk"><span>Lunsj 12:22&ndash;13:25</span></div>
       </div>
       <div class="cell" data-ring="6" data-hour="12">
         <article class="blk" data-clubs="melhus-taekwon-do-klubb" style="--edge:var(--blue)">
@@ -1204,10 +1218,8 @@
             <li class="blue" data-club="melhus-taekwon-do-klubb"><span class="num">2</span><span class="nm">Heggelund Jensen Marit</span><span class="meta">Melhus Taekwon-Do Klubb &middot; <b>ca. 12:22</b> &middot; kamp 2/4</span></li>
           </ul>
         </article>
-        <div class="brk"><span>Lunsj 12:34&ndash;13:35</span></div>
       </div>
       <div class="cell" data-ring="7" data-hour="12">
-        <div class="brk"><span>Lunsj 12:39&ndash;13:40</span></div>
       </div>
       <div class="cell" data-ring="8" data-hour="12">
         <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
@@ -1219,15 +1231,12 @@
             <li class="red" data-club="trondheim-tkd"><span class="num">2</span><span class="nm">Lundager Linn Anita</span><span class="meta">Trondheim TKD &middot; <b>ca. 12:06</b> &middot; kamp 2/3</span></li>
           </ul>
         </article>
-        <div class="brk"><span>Lunsj 12:17&ndash;13:20</span></div>
       </div>
       <div class="cell" data-ring="9" data-hour="12">
       </div>
       <div class="cell" data-ring="10" data-hour="12">
-        <div class="brk"><span>Lunsj 12:55&ndash;13:55</span></div>
       </div>
       <div class="cell" data-ring="11" data-hour="12">
-        <div class="brk"><span>Lunsj 12:24&ndash;13:25</span></div>
       </div>
       <div class="hr" data-hour="13">13:00</div>
       <div class="cell" data-ring="1" data-hour="13">
@@ -1266,7 +1275,6 @@
       <div class="cell" data-ring="8" data-hour="13">
       </div>
       <div class="cell" data-ring="9" data-hour="13">
-        <div class="brk"><span>Lunsj 13:00&ndash;14:00</span></div>
       </div>
       <div class="cell" data-ring="10" data-hour="13">
       </div>
@@ -1926,39 +1934,40 @@
       </div>
       <div class="cell" data-ring="11" data-hour="11">
       </div>
+      <div class="hr lunchlab">Lunsj</div>
+      <div class="lunchcell" data-ring="1"><span>12:45&ndash;13:45</span></div>
+      <div class="lunchcell" data-ring="2"><span>12:23&ndash;13:25</span></div>
+      <div class="lunchcell" data-ring="3"><span>12:18&ndash;13:20</span></div>
+      <div class="lunchcell" data-ring="4"><span>12:08&ndash;13:10</span></div>
+      <div class="lunchcell" data-ring="5"><span>12:06&ndash;13:10</span></div>
+      <div class="lunchcell" data-ring="6"><span>12:19&ndash;13:20</span></div>
+      <div class="lunchcell" data-ring="7"><span>12:09&ndash;13:10</span></div>
+      <div class="lunchcell" data-ring="8"><span>12:53&ndash;13:55</span></div>
+      <div class="lunchcell" data-ring="9"><span>12:45&ndash;13:45</span></div>
+      <div class="lunchcell" data-ring="10"><span>12:55&ndash;13:55</span></div>
+      <div class="lunchcell" data-ring="11"><span>12:55&ndash;13:55</span></div>
       <div class="hr" data-hour="12">12:00</div>
       <div class="cell" data-ring="1" data-hour="12">
-        <div class="brk"><span>Lunsj 12:45&ndash;13:45</span></div>
       </div>
       <div class="cell" data-ring="2" data-hour="12">
-        <div class="brk"><span>Lunsj 12:23&ndash;13:25</span></div>
       </div>
       <div class="cell" data-ring="3" data-hour="12">
-        <div class="brk"><span>Lunsj 12:18&ndash;13:20</span></div>
       </div>
       <div class="cell" data-ring="4" data-hour="12">
-        <div class="brk"><span>Lunsj 12:08&ndash;13:10</span></div>
       </div>
       <div class="cell" data-ring="5" data-hour="12">
-        <div class="brk"><span>Lunsj 12:06&ndash;13:10</span></div>
       </div>
       <div class="cell" data-ring="6" data-hour="12">
-        <div class="brk"><span>Lunsj 12:19&ndash;13:20</span></div>
       </div>
       <div class="cell" data-ring="7" data-hour="12">
-        <div class="brk"><span>Lunsj 12:09&ndash;13:10</span></div>
       </div>
       <div class="cell" data-ring="8" data-hour="12">
-        <div class="brk"><span>Lunsj 12:53&ndash;13:55</span></div>
       </div>
       <div class="cell" data-ring="9" data-hour="12">
-        <div class="brk"><span>Lunsj 12:45&ndash;13:45</span></div>
       </div>
       <div class="cell" data-ring="10" data-hour="12">
-        <div class="brk"><span>Lunsj 12:55&ndash;13:55</span></div>
       </div>
       <div class="cell" data-ring="11" data-hour="12">
-        <div class="brk"><span>Lunsj 12:55&ndash;13:55</span></div>
       </div>
       <div class="hr" data-hour="13">13:00</div>
       <div class="cell" data-ring="1" data-hour="13">
@@ -2584,24 +2593,30 @@
       </div>
       <div class="cell" data-ring="11" data-hour="11">
       </div>
+      <div class="hr lunchlab">Lunsj</div>
+      <div class="lunchcell" data-ring="1"><span>12:22&ndash;13:23</span></div>
+      <div class="lunchcell" data-ring="2"><span>12:14&ndash;13:15</span></div>
+      <div class="lunchcell" data-ring="3"><span>12:24&ndash;13:25</span></div>
+      <div class="lunchcell" data-ring="4"><span>12:55&ndash;13:55</span></div>
+      <div class="lunchcell" data-ring="5"><span>12:48&ndash;13:50</span></div>
+      <div class="lunchcell" data-ring="6"><span>12:42&ndash;13:45</span></div>
+      <div class="lunchcell" data-ring="7"><span>12:57&ndash;14:00</span></div>
+      <div class="lunchcell" data-ring="8"><span>13:25&ndash;14:25</span></div>
+      <div class="lunchcell" data-ring="9"><span>12:43&ndash;13:46</span></div>
+      <div class="lunchcell" data-ring="10"><span>12:39&ndash;13:40</span></div>
+      <div class="lunchcell" data-ring="11"><span>12:38&ndash;13:40</span></div>
       <div class="hr" data-hour="12">12:00</div>
       <div class="cell" data-ring="1" data-hour="12">
-        <div class="brk"><span>Lunsj 12:22&ndash;13:23</span></div>
       </div>
       <div class="cell" data-ring="2" data-hour="12">
-        <div class="brk"><span>Lunsj 12:14&ndash;13:15</span></div>
       </div>
       <div class="cell" data-ring="3" data-hour="12">
-        <div class="brk"><span>Lunsj 12:24&ndash;13:25</span></div>
       </div>
       <div class="cell" data-ring="4" data-hour="12">
-        <div class="brk"><span>Lunsj 12:55&ndash;13:55</span></div>
       </div>
       <div class="cell" data-ring="5" data-hour="12">
-        <div class="brk"><span>Lunsj 12:48&ndash;13:50</span></div>
       </div>
       <div class="cell" data-ring="6" data-hour="12">
-        <div class="brk"><span>Lunsj 12:42&ndash;13:45</span></div>
       </div>
       <div class="cell" data-ring="7" data-hour="12">
         <article class="blk" data-clubs="arendal-tkd oslo-ost-tkd" style="--edge:var(--red)">
@@ -2614,18 +2629,14 @@
             <li class="blue" data-club="oslo-ost-tkd"><span class="num">5</span><span class="nm">Fostvedt Emilie</span><span class="meta">Oslo Øst TKD &middot; <b>ca. 12:21</b> &middot; kamp 5/19</span></li>
           </ul>
         </article>
-        <div class="brk"><span>Lunsj 12:57&ndash;14:00</span></div>
       </div>
       <div class="cell" data-ring="8" data-hour="12">
       </div>
       <div class="cell" data-ring="9" data-hour="12">
-        <div class="brk"><span>Lunsj 12:43&ndash;13:46</span></div>
       </div>
       <div class="cell" data-ring="10" data-hour="12">
-        <div class="brk"><span>Lunsj 12:39&ndash;13:40</span></div>
       </div>
       <div class="cell" data-ring="11" data-hour="12">
-        <div class="brk"><span>Lunsj 12:38&ndash;13:40</span></div>
       </div>
       <div class="hr" data-hour="13">13:00</div>
       <div class="cell" data-ring="1" data-hour="13">
@@ -2703,7 +2714,6 @@
       <div class="cell" data-ring="7" data-hour="13">
       </div>
       <div class="cell" data-ring="8" data-hour="13">
-        <div class="brk"><span>Lunsj 13:25&ndash;14:25</span></div>
       </div>
       <div class="cell" data-ring="9" data-hour="13">
         <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue)">
@@ -2984,12 +2994,19 @@
           </ul>
         </article>
       </div>
+      <div class="hr lunchlab">Lunsj</div>
+      <div class="lunchcell" data-ring="1"><span>12:35&ndash;13:35</span></div>
+      <div class="lunchcell" data-ring="2"><span>12:14&ndash;13:15</span></div>
+      <div class="lunchcell" data-ring="3"><span>12:16&ndash;13:20</span></div>
+      <div class="lunchcell" data-ring="4"><span>12:30&ndash;13:30</span></div>
+      <div class="lunchcell" data-ring="5"><span>12:44&ndash;13:45</span></div>
+      <div class="lunchcell" data-ring="7"><span>12:19&ndash;13:20</span></div>
+      <div class="lunchcell" data-ring="8"><span>12:14&ndash;13:15</span></div>
+      <div class="lunchcell" data-ring="9"><span>12:38&ndash;13:40</span></div>
       <div class="hr" data-hour="12">12:00</div>
       <div class="cell" data-ring="1" data-hour="12">
-        <div class="brk"><span>Lunsj 12:35&ndash;13:35</span></div>
       </div>
       <div class="cell" data-ring="2" data-hour="12">
-        <div class="brk"><span>Lunsj 12:14&ndash;13:15</span></div>
       </div>
       <div class="cell" data-ring="3" data-hour="12">
         <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--none)">
@@ -3001,22 +3018,16 @@
             <li class="none" data-club="moss-national-taekwon-do-klubb"><span class="num">1</span><span class="nm">Kirkeby Morten</span><span class="meta">Moss National Taekwon-Do Klubb &middot; <b>ca. 12:01</b> &middot; nr. 1/4</span></li>
           </ul>
         </article>
-        <div class="brk"><span>Lunsj 12:16&ndash;13:20</span></div>
       </div>
       <div class="cell" data-ring="4" data-hour="12">
-        <div class="brk"><span>Lunsj 12:30&ndash;13:30</span></div>
       </div>
       <div class="cell" data-ring="5" data-hour="12">
-        <div class="brk"><span>Lunsj 12:44&ndash;13:45</span></div>
       </div>
       <div class="cell" data-ring="7" data-hour="12">
-        <div class="brk"><span>Lunsj 12:19&ndash;13:20</span></div>
       </div>
       <div class="cell" data-ring="8" data-hour="12">
-        <div class="brk"><span>Lunsj 12:14&ndash;13:15</span></div>
       </div>
       <div class="cell" data-ring="9" data-hour="12">
-        <div class="brk"><span>Lunsj 12:38&ndash;13:40</span></div>
       </div>
       <div class="hr" data-hour="13">13:00</div>
       <div class="cell" data-ring="1" data-hour="13">
@@ -3215,6 +3226,9 @@
         each(day, '.cell', function(c){
           c.hidden = !all && (!ringsOn[c.getAttribute('data-ring')]
                               || !hoursOn[c.getAttribute('data-hour')]);
+        });
+        each(day, '.lunchcell', function(c){
+          c.hidden = !all && !ringsOn[c.getAttribute('data-ring')];
         });
         var n = all ? parseInt(grid.getAttribute('data-cols'), 10)
                     : Object.keys(ringsOn).length;
