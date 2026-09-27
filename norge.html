@@ -114,9 +114,11 @@
   .cell{border-top:1px solid var(--rule-soft);border-left:1px solid var(--rule-soft);
         padding:6px 5px;display:flex;flex-direction:column;gap:6px;}
 
-  .blk{background:var(--surface);border:1px solid var(--rule-soft);
-       border-left:3px solid var(--edge,var(--none));border-radius:3px;
-       box-shadow:var(--shadow);padding:6px 8px 6px;transition:opacity .15s;}
+  .blk{background:var(--surface);border:1px solid var(--rule-soft);border-radius:3px;
+       box-shadow:var(--shadow);padding:6px 8px 6px 11px;overflow:hidden;
+       transition:opacity .15s;}
+  .blk::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+               background:var(--edgebg,var(--none));}
   .lunchcell{background:var(--band);border-top:1px solid var(--rule);
              border-bottom:1px solid var(--rule);border-left:1px solid var(--rule-soft);
              display:flex;align-items:center;justify-content:center;padding:9px 4px;}
@@ -227,7 +229,7 @@
       <div class="hd" data-ring="11"><a href="https://youtube.com/live/hAAYztLJxU8?feature=share" target="_blank" rel="noopener" title="Se ring 11 direkte">Ring 11 <span class="play">&#9654;</span></a></div>
       <div class="hr" data-hour="9">09:00</div>
       <div class="cell" data-ring="1" data-hour="9">
-        <article class="blk" data-clubs="bergen-tkd royken-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 25%,var(--blue) 25% 50%,var(--blue) 50% 75%,var(--red) 75% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:30&ndash;13:25 &middot; pulje 1/2, 2/2</div>
           <h3 class="cat">Forh.best. sparring <span class="go">&#8599;</span></h3>
@@ -243,7 +245,7 @@
       <div class="cell" data-ring="2" data-hour="9">
       </div>
       <div class="cell" data-ring="3" data-hour="9">
-        <article class="blk" data-clubs="alesund-tkd arendal-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="alesund-tkd arendal-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:30&ndash;11:48 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -278,7 +280,7 @@
       <div class="cell" data-ring="3" data-hour="10">
       </div>
       <div class="cell" data-ring="4" data-hour="10">
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:17&ndash;11:19 &middot; pulje 1/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -289,7 +291,7 @@
         </article>
       </div>
       <div class="cell" data-ring="5" data-hour="10">
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:15&ndash;11:15 &middot; pulje 2/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -300,7 +302,7 @@
         </article>
       </div>
       <div class="cell" data-ring="6" data-hour="10">
-        <article class="blk" data-clubs="melhus-taekwon-do-klubb royken-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="melhus-taekwon-do-klubb royken-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 50%,var(--red) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:17&ndash;11:17 &middot; pulje 3/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -314,7 +316,7 @@
       <div class="cell" data-ring="7" data-hour="10">
       </div>
       <div class="cell" data-ring="8" data-hour="10">
-        <article class="blk" data-clubs="bergen-tkd tromso-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd tromso-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 50%,var(--red) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:17&ndash;11:36 &middot; pulje 1/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -326,7 +328,7 @@
         </article>
       </div>
       <div class="cell" data-ring="9" data-hour="10">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:15&ndash;11:31 &middot; pulje 2/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -337,7 +339,7 @@
         </article>
       </div>
       <div class="cell" data-ring="10" data-hour="10">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:17&ndash;11:33 &middot; pulje 3/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -348,7 +350,7 @@
         </article>
       </div>
       <div class="cell" data-ring="11" data-hour="10">
-        <article class="blk" data-clubs="bergen-tkd tromso-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd tromso-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:15&ndash;11:31 &middot; pulje 4/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -364,7 +366,7 @@
       <div class="cell" data-ring="1" data-hour="11">
       </div>
       <div class="cell" data-ring="2" data-hour="11">
-        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb oslo-ost-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb oslo-ost-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:38&ndash;13:28 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -377,7 +379,7 @@
         </article>
       </div>
       <div class="cell" data-ring="3" data-hour="11">
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:51&ndash;13:16 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -399,7 +401,7 @@
       <div class="cell" data-ring="8" data-hour="11">
       </div>
       <div class="cell" data-ring="9" data-hour="11">
-        <article class="blk" data-clubs="gauldal-taekwon-do-klubb surnadal-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="gauldal-taekwon-do-klubb surnadal-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:35&ndash;12:42 &middot; pulje 2/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -440,7 +442,7 @@
       <div class="cell" data-ring="6" data-hour="12">
       </div>
       <div class="cell" data-ring="7" data-hour="12">
-        <article class="blk" data-clubs="royken-tkd vaernes-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd vaernes-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">12:28&ndash;12:54 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -469,7 +471,7 @@
       <div class="cell" data-ring="4" data-hour="13">
       </div>
       <div class="cell" data-ring="5" data-hour="13">
-        <article class="blk" data-clubs="alesund-tkd bergen-tkd orkdal-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="alesund-tkd bergen-tkd orkdal-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 25%,var(--blue) 25% 50%,var(--red) 50% 75%,var(--red) 75% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:55&ndash;15:50 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -487,7 +489,7 @@
       <div class="cell" data-ring="7" data-hour="13">
       </div>
       <div class="cell" data-ring="8" data-hour="13">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:50&ndash;15:10 &middot; pulje 1/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -498,7 +500,7 @@
         </article>
       </div>
       <div class="cell" data-ring="9" data-hour="13">
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:45&ndash;15:05 &middot; pulje 2/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -509,7 +511,7 @@
         </article>
       </div>
       <div class="cell" data-ring="10" data-hour="13">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:45&ndash;15:05 &middot; pulje 3/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -525,7 +527,7 @@
       <div class="cell" data-ring="1" data-hour="14">
       </div>
       <div class="cell" data-ring="2" data-hour="14">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:30&ndash;17:04 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -536,7 +538,7 @@
         </article>
       </div>
       <div class="cell" data-ring="3" data-hour="14">
-        <article class="blk" data-clubs="gauldal-taekwon-do-klubb" style="--edge:var(--none)">
+        <article class="blk" data-clubs="gauldal-taekwon-do-klubb" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:20&ndash;17:05 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -547,7 +549,7 @@
         </article>
       </div>
       <div class="cell" data-ring="4" data-hour="14">
-        <article class="blk" data-clubs="surnadal-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="surnadal-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 50%,var(--red) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:00&ndash;15:55 &middot; pulje 2/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -561,7 +563,7 @@
       <div class="cell" data-ring="5" data-hour="14">
       </div>
       <div class="cell" data-ring="6" data-hour="14">
-        <article class="blk" data-clubs="bergen-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:00&ndash;15:40 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -573,7 +575,7 @@
         </article>
       </div>
       <div class="cell" data-ring="7" data-hour="14">
-        <article class="blk" data-clubs="bergen-tkd christiania-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd christiania-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:10&ndash;15:45 &middot; pulje 2/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -591,7 +593,7 @@
       <div class="cell" data-ring="10" data-hour="14">
       </div>
       <div class="cell" data-ring="11" data-hour="14">
-        <article class="blk" data-clubs="oslo-ost-tkd surnadal-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="oslo-ost-tkd surnadal-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--blue) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:00&ndash;15:20 &middot; pulje 4/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -611,7 +613,7 @@
       <div class="cell" data-ring="3" data-hour="15">
       </div>
       <div class="cell" data-ring="4" data-hour="15">
-        <article class="blk" data-clubs="christiania-tkd oslo-ost-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="christiania-tkd oslo-ost-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 50%,var(--blue) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:59&ndash;18:33 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -623,7 +625,7 @@
         </article>
       </div>
       <div class="cell" data-ring="5" data-hour="15">
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:54&ndash;18:28 &middot; pulje 2/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -634,7 +636,7 @@
         </article>
       </div>
       <div class="cell" data-ring="6" data-hour="15">
-        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:44&ndash;17:48 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -647,7 +649,7 @@
       <div class="cell" data-ring="7" data-hour="15">
       </div>
       <div class="cell" data-ring="8" data-hour="15">
-        <article class="blk" data-clubs="orkdal-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="orkdal-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 25%,var(--red) 25% 50%,var(--blue) 50% 75%,var(--red) 75% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:14&ndash;17:48 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -661,7 +663,7 @@
         </article>
       </div>
       <div class="cell" data-ring="9" data-hour="15">
-        <article class="blk" data-clubs="fana-tkd oslo-ost-tkd skien-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="fana-tkd oslo-ost-tkd skien-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:09&ndash;17:09 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -674,7 +676,7 @@
         </article>
       </div>
       <div class="cell" data-ring="10" data-hour="15">
-        <article class="blk" data-clubs="fana-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="fana-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:09&ndash;16:39 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -685,7 +687,7 @@
         </article>
       </div>
       <div class="cell" data-ring="11" data-hour="15">
-        <article class="blk" data-clubs="fana-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="fana-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:24&ndash;16:54 &middot; pulje 2/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -715,7 +717,7 @@
       <div class="cell" data-ring="9" data-hour="16">
       </div>
       <div class="cell" data-ring="10" data-hour="16">
-        <article class="blk" data-clubs="skien-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="skien-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">16:43&ndash;18:13 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -728,7 +730,7 @@
         </article>
       </div>
       <div class="cell" data-ring="11" data-hour="16">
-        <article class="blk" data-clubs="trondheim-tkd vardo-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd vardo-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">16:58&ndash;18:28 &middot; pulje 2/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -744,7 +746,7 @@
       <div class="cell" data-ring="1" data-hour="17">
       </div>
       <div class="cell" data-ring="2" data-hour="17">
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">17:08&ndash;17:59 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -755,7 +757,7 @@
         </article>
       </div>
       <div class="cell" data-ring="3" data-hour="17">
-        <article class="blk" data-clubs="christiania-tkd fana-tkd itf-tromsdalen-tkd-klubb oslo-ost-tkd trondheim-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="christiania-tkd fana-tkd itf-tromsdalen-tkd-klubb oslo-ost-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">17:08&ndash;18:36 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -775,7 +777,7 @@
       <div class="cell" data-ring="5" data-hour="17">
       </div>
       <div class="cell" data-ring="6" data-hour="17">
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">17:52&ndash;18:22 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -838,7 +840,7 @@
       <div class="hd" data-ring="11"><a href="https://youtube.com/live/PlEf8uE-_bM?feature=share" target="_blank" rel="noopener" title="Se ring 11 direkte">Ring 11 <span class="play">&#9654;</span></a></div>
       <div class="hr" data-hour="9">09:00</div>
       <div class="cell" data-ring="1" data-hour="9">
-        <article class="blk" data-clubs="bryne-tkd fana-tkd melhus-taekwon-do-klubb orkdal-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bryne-tkd fana-tkd melhus-taekwon-do-klubb orkdal-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 25%,var(--blue) 25% 50%,var(--blue) 50% 75%,var(--red) 75% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;10:08 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -852,7 +854,7 @@
         </article>
       </div>
       <div class="cell" data-ring="2" data-hour="9">
-        <article class="blk" data-clubs="alesund-tkd arendal-tkd asker-tkd bergen-tkd royken-tkd trondheim-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="alesund-tkd arendal-tkd asker-tkd bergen-tkd royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;11:58 &middot; pulje 1/1</div>
           <h3 class="cat">Kraftprøve <span class="go">&#8599;</span></h3>
@@ -870,7 +872,7 @@
         </article>
       </div>
       <div class="cell" data-ring="3" data-hour="9">
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb oslo-ost-tkd trondheim-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb oslo-ost-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;12:45 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -888,7 +890,7 @@
         </article>
       </div>
       <div class="cell" data-ring="4" data-hour="9">
-        <article class="blk" data-clubs="arendal-tkd christiania-tkd melhus-taekwon-do-klubb" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="arendal-tkd christiania-tkd melhus-taekwon-do-klubb" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 33.33%,var(--red) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:44 &middot; pulje 1/2</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -903,7 +905,7 @@
       <div class="cell" data-ring="5" data-hour="9">
       </div>
       <div class="cell" data-ring="6" data-hour="9">
-        <article class="blk" data-clubs="gauldal-taekwon-do-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="gauldal-taekwon-do-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:20 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -912,7 +914,7 @@
             <li class="red" data-club="gauldal-taekwon-do-klubb"><span class="num">4</span><span class="nm">Stendal Tom Olav</span><span class="meta">Gauldal Taekwon-Do Klubb &middot; <b>ca. 09:09</b> &middot; kamp 4/7</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb royken-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:24&ndash;10:08 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -925,7 +927,7 @@
         </article>
       </div>
       <div class="cell" data-ring="7" data-hour="9">
-        <article class="blk" data-clubs="vaernes-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="vaernes-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:10 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -934,7 +936,7 @@
             <li class="blue" data-club="vaernes-tkd"><span class="num">1</span><span class="nm">Steinkjer Aud-Eli</span><span class="meta">Værnes TKD &middot; <b>ca. 09:00</b> &middot; kamp 1/3</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:14&ndash;09:53 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -943,7 +945,7 @@
             <li class="red" data-club="royken-tkd"><span class="num">3</span><span class="nm">Saxrud Kai</span><span class="meta">Røyken TKD &middot; <b>ca. 09:20</b> &middot; kamp 3/14</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:57&ndash;10:22 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -954,7 +956,7 @@
         </article>
       </div>
       <div class="cell" data-ring="8" data-hour="9">
-        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb royken-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb royken-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:38&ndash;09:53 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -964,7 +966,7 @@
             <li class="red" data-club="royken-tkd"><span class="num">2</span><span class="nm">Przybylska-Wolanin Sabina</span><span class="meta">Røyken TKD &middot; <b>ca. 09:41</b> &middot; kamp 2/5</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="fana-tkd itf-tromsdalen-tkd-klubb trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="fana-tkd itf-tromsdalen-tkd-klubb trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:57&ndash;11:57 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -977,7 +979,7 @@
         </article>
       </div>
       <div class="cell" data-ring="9" data-hour="9">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:52&ndash;11:47 &middot; pulje 2/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -988,7 +990,7 @@
         </article>
       </div>
       <div class="cell" data-ring="10" data-hour="9">
-        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:23 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -997,7 +999,7 @@
             <li class="blue" data-club="oslo-ost-tkd"><span class="num">1</span><span class="nm">Lund Hanne-Kristine</span><span class="meta">Oslo Øst TKD &middot; <b>ca. 09:00</b> &middot; kamp 1/8</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="melhus-taekwon-do-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="melhus-taekwon-do-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:27&ndash;09:45 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1006,7 +1008,7 @@
             <li class="red" data-club="melhus-taekwon-do-klubb"><span class="num">2</span><span class="nm">Heggelund Jensen Marit</span><span class="meta">Melhus Taekwon-Do Klubb &middot; <b>ca. 09:30</b> &middot; kamp 2/7</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="bergen-tkd royken-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:50&ndash;11:50 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1019,7 +1021,7 @@
         </article>
       </div>
       <div class="cell" data-ring="11" data-hour="9">
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb oslo-ost-tkd royken-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb oslo-ost-tkd royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 16.67%,var(--blue) 16.67% 33.33%,var(--red) 33.33% 50%,var(--blue) 50% 66.67%,var(--red) 66.67% 83.33%,var(--red) 83.33% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:55 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1033,7 +1035,7 @@
             <li class="red" data-club="oslo-ost-tkd"><span class="num">9</span><span class="nm">Kalsås-Carlsen Trine</span><span class="meta">Oslo Øst TKD &middot; <b>ca. 09:22</b> &middot; kamp 9/20</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:59&ndash;11:54 &middot; pulje 2/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1045,7 +1047,7 @@
       </div>
       <div class="hr" data-hour="10">10:00</div>
       <div class="cell" data-ring="1" data-hour="10">
-        <article class="blk" data-clubs="fana-tkd tromso-tkd trondheim-tkd vardo-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="fana-tkd tromso-tkd trondheim-tkd vardo-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 20%,var(--red) 20% 40%,var(--red) 40% 60%,var(--red) 60% 80%,var(--red) 80% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:19&ndash;11:17 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1064,7 +1066,7 @@
       <div class="cell" data-ring="3" data-hour="10">
       </div>
       <div class="cell" data-ring="4" data-hour="10">
-        <article class="blk" data-clubs="itf-aal-taekwon-do-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="itf-aal-taekwon-do-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:54&ndash;12:29 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1075,7 +1077,7 @@
         </article>
       </div>
       <div class="cell" data-ring="5" data-hour="10">
-        <article class="blk" data-clubs="vaernes-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="vaernes-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:17&ndash;10:30 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1086,7 +1088,7 @@
         </article>
       </div>
       <div class="cell" data-ring="6" data-hour="10">
-        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:54&ndash;12:14 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1097,7 +1099,7 @@
         </article>
       </div>
       <div class="cell" data-ring="7" data-hour="10">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:26&ndash;10:44 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1106,7 +1108,7 @@
             <li class="blue" data-club="trondheim-tkd"><span class="num">2</span><span class="nm">Breivik Ida</span><span class="meta">Trondheim TKD &middot; <b>ca. 10:29</b> &middot; kamp 2/6</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:49&ndash;12:09 &middot; pulje 2/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1126,7 +1128,7 @@
       </div>
       <div class="hr" data-hour="11">11:00</div>
       <div class="cell" data-ring="1" data-hour="11">
-        <article class="blk" data-clubs="surnadal-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="surnadal-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:45&ndash;12:36 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1152,7 +1154,7 @@
       <div class="cell" data-ring="8" data-hour="11">
       </div>
       <div class="cell" data-ring="9" data-hour="11">
-        <article class="blk" data-clubs="oslo-ost-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="oslo-ost-tkd trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:50&ndash;13:00 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1166,7 +1168,7 @@
       <div class="cell" data-ring="10" data-hour="11">
       </div>
       <div class="cell" data-ring="11" data-hour="11">
-        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:58&ndash;12:24 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1192,7 +1194,7 @@
       <div class="cell" data-ring="1" data-hour="12">
       </div>
       <div class="cell" data-ring="2" data-hour="12">
-        <article class="blk" data-clubs="vardo-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="vardo-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">12:04&ndash;12:25 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1209,7 +1211,7 @@
       <div class="cell" data-ring="5" data-hour="12">
       </div>
       <div class="cell" data-ring="6" data-hour="12">
-        <article class="blk" data-clubs="melhus-taekwon-do-klubb" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="melhus-taekwon-do-klubb" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">12:18&ndash;12:34 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1222,7 +1224,7 @@
       <div class="cell" data-ring="7" data-hour="12">
       </div>
       <div class="cell" data-ring="8" data-hour="12">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">12:01&ndash;12:17 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1242,7 +1244,7 @@
       <div class="cell" data-ring="1" data-hour="13">
       </div>
       <div class="cell" data-ring="2" data-hour="13">
-        <article class="blk" data-clubs="gauldal-taekwon-do-klubb vardo-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="gauldal-taekwon-do-klubb vardo-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 50%,var(--blue) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:25&ndash;15:05 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1258,7 +1260,7 @@
       <div class="cell" data-ring="4" data-hour="13">
       </div>
       <div class="cell" data-ring="5" data-hour="13">
-        <article class="blk" data-clubs="surnadal-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="surnadal-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:25&ndash;15:03 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1279,7 +1281,7 @@
       <div class="cell" data-ring="10" data-hour="13">
       </div>
       <div class="cell" data-ring="11" data-hour="13">
-        <article class="blk" data-clubs="alesund-tkd vardo-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="alesund-tkd vardo-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 50%,var(--red) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:25&ndash;14:56 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1302,7 +1304,7 @@
       <div class="cell" data-ring="5" data-hour="14">
       </div>
       <div class="cell" data-ring="6" data-hour="14">
-        <article class="blk" data-clubs="gauldal-taekwon-do-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="gauldal-taekwon-do-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:58&ndash;16:08 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1315,7 +1317,7 @@
       <div class="cell" data-ring="7" data-hour="14">
       </div>
       <div class="cell" data-ring="8" data-hour="14">
-        <article class="blk" data-clubs="christiania-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="christiania-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:41&ndash;15:43 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1333,7 +1335,7 @@
       </div>
       <div class="hr" data-hour="15">15:00</div>
       <div class="cell" data-ring="1" data-hour="15">
-        <article class="blk" data-clubs="fana-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="fana-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:58&ndash;17:13 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1344,7 +1346,7 @@
         </article>
       </div>
       <div class="cell" data-ring="2" data-hour="15">
-        <article class="blk" data-clubs="bryne-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bryne-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:16&ndash;16:46 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1355,7 +1357,7 @@
         </article>
       </div>
       <div class="cell" data-ring="3" data-hour="15">
-        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb trondheim-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb trondheim-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:34&ndash;16:19 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -1373,7 +1375,7 @@
       <div class="cell" data-ring="6" data-hour="15">
       </div>
       <div class="cell" data-ring="7" data-hour="15">
-        <article class="blk" data-clubs="arendal-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="arendal-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:53&ndash;16:48 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1386,7 +1388,7 @@
       <div class="cell" data-ring="8" data-hour="15">
       </div>
       <div class="cell" data-ring="9" data-hour="15">
-        <article class="blk" data-clubs="royken-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:45&ndash;16:19 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1400,7 +1402,7 @@
       <div class="cell" data-ring="10" data-hour="15">
       </div>
       <div class="cell" data-ring="11" data-hour="15">
-        <article class="blk" data-clubs="alesund-tkd arendal-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="alesund-tkd arendal-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 50%,var(--red) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:00&ndash;15:52 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1410,7 +1412,7 @@
             <li class="red" data-club="alesund-tkd"><span class="num">7</span><span class="nm">Mittet Christer</span><span class="meta">Ålesund TKD &middot; <b>ca. 15:22</b> &middot; kamp 7/14</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="alesund-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="alesund-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:56&ndash;16:08 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1432,7 +1434,7 @@
       <div class="cell" data-ring="5" data-hour="16">
       </div>
       <div class="cell" data-ring="6" data-hour="16">
-        <article class="blk" data-clubs="melhus-taekwon-do-klubb moss-national-taekwon-do-klubb" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="melhus-taekwon-do-klubb moss-national-taekwon-do-klubb" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 50%,var(--red) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">16:41&ndash;18:01 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1444,7 +1446,7 @@
         </article>
       </div>
       <div class="cell" data-ring="7" data-hour="16">
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">16:52&ndash;17:37 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1457,7 +1459,7 @@
       <div class="cell" data-ring="8" data-hour="16">
       </div>
       <div class="cell" data-ring="9" data-hour="16">
-        <article class="blk" data-clubs="arendal-tkd christiania-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="arendal-tkd christiania-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">16:23&ndash;17:53 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1469,7 +1471,7 @@
         </article>
       </div>
       <div class="cell" data-ring="10" data-hour="16">
-        <article class="blk" data-clubs="gauldal-taekwon-do-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="gauldal-taekwon-do-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">16:28&ndash;17:53 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1480,7 +1482,7 @@
         </article>
       </div>
       <div class="cell" data-ring="11" data-hour="16">
-        <article class="blk" data-clubs="melhus-taekwon-do-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="melhus-taekwon-do-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">16:12&ndash;17:13 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1494,7 +1496,7 @@
       <div class="cell" data-ring="1" data-hour="17">
       </div>
       <div class="cell" data-ring="2" data-hour="17">
-        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">17:33&ndash;18:00 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1513,7 +1515,7 @@
       <div class="cell" data-ring="6" data-hour="17">
       </div>
       <div class="cell" data-ring="7" data-hour="17">
-        <article class="blk" data-clubs="arendal-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="arendal-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">17:41&ndash;18:00 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1530,7 +1532,7 @@
       <div class="cell" data-ring="10" data-hour="17">
       </div>
       <div class="cell" data-ring="11" data-hour="17">
-        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">17:17&ndash;17:54 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -1583,7 +1585,7 @@
       <div class="hd" data-ring="11"><a href="https://youtube.com/live/eMMlhk0lkEI?feature=share" target="_blank" rel="noopener" title="Se ring 11 direkte">Ring 11 <span class="play">&#9654;</span></a></div>
       <div class="hr" data-hour="9">09:00</div>
       <div class="cell" data-ring="1" data-hour="9">
-        <article class="blk" data-clubs="christiania-tkd fana-tkd orkdal-tkd oslo-ost-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="christiania-tkd fana-tkd orkdal-tkd oslo-ost-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 8.333%,var(--blue) 8.333% 16.67%,var(--red) 16.67% 25%,var(--blue) 25% 33.33%,var(--red) 33.33% 41.67%,var(--blue) 41.67% 50%,var(--red) 50% 58.33%,var(--blue) 58.33% 66.67%,var(--red) 66.67% 75%,var(--red) 75% 83.33%,var(--red) 83.33% 91.67%,var(--red) 91.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;12:45 &middot; pulje 1/2, 2/2</div>
           <h3 class="cat">Forh.best. sparring <span class="go">&#8599;</span></h3>
@@ -1605,7 +1607,7 @@
         </article>
       </div>
       <div class="cell" data-ring="2" data-hour="9">
-        <article class="blk" data-clubs="arendal-tkd melhus-taekwon-do-klubb royken-tkd trondheim-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="arendal-tkd melhus-taekwon-do-klubb royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;10:48 &middot; pulje 1/1</div>
           <h3 class="cat">Kraftprøve <span class="go">&#8599;</span></h3>
@@ -1621,7 +1623,7 @@
       <div class="cell" data-ring="3" data-hour="9">
       </div>
       <div class="cell" data-ring="4" data-hour="9">
-        <article class="blk" data-clubs="alesund-tkd bergen-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="alesund-tkd bergen-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:55 &middot; pulje 1/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1631,7 +1633,7 @@
             <li class="blue" data-club="bergen-tkd"><span class="num">10</span><span class="nm">Løve William</span><span class="meta">Bergen TKD &middot; <b>ca. 09:25</b> &middot; kamp 10/20</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="gauldal-taekwon-do-klubb oslo-ost-tkd royken-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="gauldal-taekwon-do-klubb oslo-ost-tkd royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 25%,var(--red) 25% 50%,var(--blue) 50% 75%,var(--blue) 75% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:58&ndash;10:56 &middot; pulje 1/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1645,7 +1647,7 @@
         </article>
       </div>
       <div class="cell" data-ring="5" data-hour="9">
-        <article class="blk" data-clubs="bergen-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 50%,var(--red) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:55 &middot; pulje 2/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1655,7 +1657,7 @@
             <li class="red" data-club="trondheim-tkd"><span class="num">13</span><span class="nm">Heyeraas Thomas Nordbø</span><span class="meta">Trondheim TKD &middot; <b>ca. 09:33</b> &middot; kamp 13/20</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="christiania-tkd royken-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="christiania-tkd royken-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:58&ndash;10:56 &middot; pulje 2/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1668,7 +1670,7 @@
         </article>
       </div>
       <div class="cell" data-ring="6" data-hour="9">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:55 &middot; pulje 3/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1677,7 +1679,7 @@
             <li class="red" data-club="trondheim-tkd"><span class="num">6</span><span class="nm">Guillen Carlos Manuel</span><span class="meta">Trondheim TKD &middot; <b>ca. 09:14</b> &middot; kamp 6/20</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="bergen-tkd royken-tkd surnadal-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd royken-tkd surnadal-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 25%,var(--red) 25% 50%,var(--red) 50% 75%,var(--blue) 75% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:58&ndash;10:56 &middot; pulje 3/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1691,7 +1693,7 @@
         </article>
       </div>
       <div class="cell" data-ring="7" data-hour="9">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:52 &middot; pulje 4/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1700,7 +1702,7 @@
             <li class="blue" data-club="bergen-tkd"><span class="num">9</span><span class="nm">Vollan Marcus</span><span class="meta">Bergen TKD &middot; <b>ca. 09:22</b> &middot; kamp 9/19</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="royken-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:55&ndash;10:50 &middot; pulje 4/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1714,7 +1716,7 @@
       <div class="cell" data-ring="8" data-hour="9">
       </div>
       <div class="cell" data-ring="9" data-hour="9">
-        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:55 &middot; pulje 2/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1723,7 +1725,7 @@
             <li class="red" data-club="oslo-ost-tkd"><span class="num">10</span><span class="nm">Kyrkjeeide Tor Kristian</span><span class="meta">Oslo Øst TKD &middot; <b>ca. 09:25</b> &middot; kamp 10/20</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="bergen-tkd christiania-tkd vardo-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd christiania-tkd vardo-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 33.33%,var(--red) 33.33% 66.67%,var(--blue) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:58&ndash;10:58 &middot; pulje 2/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1736,7 +1738,7 @@
         </article>
       </div>
       <div class="cell" data-ring="10" data-hour="9">
-        <article class="blk" data-clubs="alesund-tkd arendal-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="alesund-tkd arendal-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 50%,var(--red) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:58 &middot; pulje 3/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1748,7 +1750,7 @@
         </article>
       </div>
       <div class="cell" data-ring="11" data-hour="9">
-        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:55 &middot; pulje 4/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1757,7 +1759,7 @@
             <li class="red" data-club="oslo-ost-tkd"><span class="num">2</span><span class="nm">Paradina Daniel Mørck</span><span class="meta">Oslo Øst TKD &middot; <b>ca. 09:03</b> &middot; kamp 2/20</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="fana-tkd surnadal-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="fana-tkd surnadal-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 50%,var(--blue) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:58&ndash;10:56 &middot; pulje 4/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1772,7 +1774,7 @@
       <div class="cell" data-ring="1" data-hour="10">
       </div>
       <div class="cell" data-ring="2" data-hour="10">
-        <article class="blk" data-clubs="bryne-tkd fana-tkd melhus-taekwon-do-klubb" style="--edge:var(--none)">
+        <article class="blk" data-clubs="bryne-tkd fana-tkd melhus-taekwon-do-klubb" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:51&ndash;12:23 &middot; pulje 1/1</div>
           <h3 class="cat">Kraftprøve <span class="go">&#8599;</span></h3>
@@ -1793,7 +1795,7 @@
       <div class="cell" data-ring="6" data-hour="10">
       </div>
       <div class="cell" data-ring="7" data-hour="10">
-        <article class="blk" data-clubs="bergen-tkd itf-aal-taekwon-do-klubb trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd itf-aal-taekwon-do-klubb trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:53&ndash;12:09 &middot; pulje 2/2</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1806,7 +1808,7 @@
         </article>
       </div>
       <div class="cell" data-ring="8" data-hour="10">
-        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb royken-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--blue) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:01&ndash;11:01 &middot; pulje 1/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1821,7 +1823,7 @@
       <div class="cell" data-ring="9" data-hour="10">
       </div>
       <div class="cell" data-ring="10" data-hour="10">
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:01&ndash;11:01 &middot; pulje 3/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1841,7 +1843,7 @@
       <div class="cell" data-ring="3" data-hour="11">
       </div>
       <div class="cell" data-ring="4" data-hour="11">
-        <article class="blk" data-clubs="bergen-tkd oslo-ost-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd oslo-ost-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 33.33%,var(--red) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:00&ndash;12:08 &middot; pulje 1/2</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1854,7 +1856,7 @@
         </article>
       </div>
       <div class="cell" data-ring="5" data-hour="11">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:00&ndash;12:06 &middot; pulje 2/2</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1865,7 +1867,7 @@
         </article>
       </div>
       <div class="cell" data-ring="6" data-hour="11">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 50%,var(--blue) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:00&ndash;12:19 &middot; pulje 1/2</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1879,7 +1881,7 @@
       <div class="cell" data-ring="7" data-hour="11">
       </div>
       <div class="cell" data-ring="8" data-hour="11">
-        <article class="blk" data-clubs="asker-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="asker-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:05&ndash;11:57 &middot; pulje 1/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1890,7 +1892,7 @@
         </article>
       </div>
       <div class="cell" data-ring="9" data-hour="11">
-        <article class="blk" data-clubs="bergen-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:02&ndash;11:52 &middot; pulje 2/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1900,7 +1902,7 @@
             <li class="red" data-club="trondheim-tkd"><span class="num">9</span><span class="nm">Vesterås Casper</span><span class="meta">Trondheim TKD &middot; <b>ca. 11:24</b> &middot; kamp 9/18</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="christiania-tkd fana-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="christiania-tkd fana-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 33.33%,var(--red) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:55&ndash;12:45 &middot; pulje 4/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1913,7 +1915,7 @@
         </article>
       </div>
       <div class="cell" data-ring="10" data-hour="11">
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:04&ndash;11:45 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1922,7 +1924,7 @@
             <li class="red" data-club="royken-tkd"><span class="num">8</span><span class="nm">Landy Aaron Benjamin</span><span class="meta">Røyken TKD &middot; <b>ca. 11:21</b> &middot; kamp 8/17</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:48&ndash;12:55 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -1973,7 +1975,7 @@
       <div class="cell" data-ring="1" data-hour="13">
       </div>
       <div class="cell" data-ring="2" data-hour="13">
-        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb trondheim-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb trondheim-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:25&ndash;14:30 &middot; pulje 1/1</div>
           <h3 class="cat">Kraftprøve <span class="go">&#8599;</span></h3>
@@ -1985,7 +1987,7 @@
         </article>
       </div>
       <div class="cell" data-ring="3" data-hour="13">
-        <article class="blk" data-clubs="arendal-tkd trondheim-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="arendal-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:20&ndash;15:05 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -1998,7 +2000,7 @@
         </article>
       </div>
       <div class="cell" data-ring="4" data-hour="13">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:10&ndash;14:29 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2026,7 +2028,7 @@
       <div class="cell" data-ring="1" data-hour="14">
       </div>
       <div class="cell" data-ring="2" data-hour="14">
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb oslo-ost-tkd royken-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb oslo-ost-tkd royken-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:33&ndash;15:35 &middot; pulje 1/1</div>
           <h3 class="cat">Kraftprøve <span class="go">&#8599;</span></h3>
@@ -2063,7 +2065,7 @@
       <div class="cell" data-ring="2" data-hour="15">
       </div>
       <div class="cell" data-ring="3" data-hour="15">
-        <article class="blk" data-clubs="christiania-tkd fana-tkd itf-tromsdalen-tkd-klubb oslo-ost-tkd trondheim-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="christiania-tkd fana-tkd itf-tromsdalen-tkd-klubb oslo-ost-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:08&ndash;17:50 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -2081,7 +2083,7 @@
       <div class="cell" data-ring="4" data-hour="15">
       </div>
       <div class="cell" data-ring="5" data-hour="15">
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:48&ndash;17:23 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2092,7 +2094,7 @@
         </article>
       </div>
       <div class="cell" data-ring="6" data-hour="15">
-        <article class="blk" data-clubs="tromso-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="tromso-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:15&ndash;16:35 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2103,7 +2105,7 @@
         </article>
       </div>
       <div class="cell" data-ring="7" data-hour="15">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:04&ndash;16:34 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2118,7 +2120,7 @@
       <div class="cell" data-ring="8" data-hour="15">
       </div>
       <div class="cell" data-ring="9" data-hour="15">
-        <article class="blk" data-clubs="melhus-taekwon-do-klubb" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="melhus-taekwon-do-klubb" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:14&ndash;16:20 &middot; pulje 2/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2146,7 +2148,7 @@
       <div class="cell" data-ring="6" data-hour="16">
       </div>
       <div class="cell" data-ring="7" data-hour="16">
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--red)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">16:38&ndash;17:55 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2157,7 +2159,7 @@
         </article>
       </div>
       <div class="cell" data-ring="8" data-hour="16">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">16:44&ndash;17:49 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2173,7 +2175,7 @@
       <div class="cell" data-ring="10" data-hour="16">
       </div>
       <div class="cell" data-ring="11" data-hour="16">
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">16:52&ndash;17:33 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2228,7 +2230,7 @@
       <div class="cell" data-ring="1" data-hour="9">
       </div>
       <div class="cell" data-ring="2" data-hour="9">
-        <article class="blk" data-clubs="bergen-tkd itf-tromsdalen-tkd-klubb oslo-ost-tkd surnadal-tkd vardo-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="bergen-tkd itf-tromsdalen-tkd-klubb oslo-ost-tkd surnadal-tkd vardo-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;11:32 &middot; pulje 1/1</div>
           <h3 class="cat">Kraftprøve <span class="go">&#8599;</span></h3>
@@ -2244,7 +2246,7 @@
         </article>
       </div>
       <div class="cell" data-ring="3" data-hour="9">
-        <article class="blk" data-clubs="arendal-tkd bergen-tkd royken-tkd trondheim-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="arendal-tkd bergen-tkd royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;12:02 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -2262,7 +2264,7 @@
         </article>
       </div>
       <div class="cell" data-ring="4" data-hour="9">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:58 &middot; pulje 1/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2273,7 +2275,7 @@
         </article>
       </div>
       <div class="cell" data-ring="5" data-hour="9">
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb orkdal-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb orkdal-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 33.33%,var(--red) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:55 &middot; pulje 2/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2284,7 +2286,7 @@
             <li class="red" data-club="moss-national-taekwon-do-klubb"><span class="num">11</span><span class="nm">Kirkeby Håvard Petter Harridsleff</span><span class="meta">Moss National Taekwon-Do Klubb &middot; <b>ca. 09:28</b> &middot; kamp 11/20</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="itf-tromsdalen-tkd-klubb trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--blue) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:58&ndash;10:50 &middot; pulje 2/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2297,7 +2299,7 @@
         </article>
       </div>
       <div class="cell" data-ring="6" data-hour="9">
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:12 &middot; pulje 1/1</div>
           <h3 class="cat">Forh.best. sparring <span class="go">&#8599;</span></h3>
@@ -2306,7 +2308,7 @@
             <li class="red" data-club="royken-tkd"><span class="num">1</span><span class="nm">Røyken TKD (Landmark, Saxrud)</span><span class="meta">Røyken TKD &middot; <b>ca. 09:00</b> &middot; kamp 1/2</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:15&ndash;10:10 &middot; pulje 3/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2317,7 +2319,7 @@
         </article>
       </div>
       <div class="cell" data-ring="7" data-hour="9">
-        <article class="blk" data-clubs="christiania-tkd fana-tkd surnadal-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="christiania-tkd fana-tkd surnadal-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 25%,var(--blue) 25% 50%,var(--blue) 50% 75%,var(--red) 75% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:31&ndash;10:26 &middot; pulje 4/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2331,7 +2333,7 @@
         </article>
       </div>
       <div class="cell" data-ring="8" data-hour="9">
-        <article class="blk" data-clubs="fana-tkd oslo-ost-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="fana-tkd oslo-ost-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:58 &middot; pulje 5/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2344,7 +2346,7 @@
         </article>
       </div>
       <div class="cell" data-ring="9" data-hour="9">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:55 &middot; pulje 6/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2353,7 +2355,7 @@
             <li class="red" data-club="trondheim-tkd"><span class="num">13</span><span class="nm">Nordal Magnus Friele</span><span class="meta">Trondheim TKD &middot; <b>ca. 09:33</b> &middot; kamp 13/20</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="bergen-tkd royken-tkd skien-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd royken-tkd skien-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 25%,var(--red) 25% 50%,var(--red) 50% 75%,var(--red) 75% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:58&ndash;10:50 &middot; pulje 6/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2367,7 +2369,7 @@
         </article>
       </div>
       <div class="cell" data-ring="10" data-hour="9">
-        <article class="blk" data-clubs="royken-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="royken-tkd trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:55 &middot; pulje 7/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2378,7 +2380,7 @@
             <li class="blue" data-club="trondheim-tkd"><span class="num">8</span><span class="nm">Kristiansen Markus Kjernaas</span><span class="meta">Trondheim TKD &middot; <b>ca. 09:19</b> &middot; kamp 8/20</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="alesund-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="alesund-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:58&ndash;10:50 &middot; pulje 7/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2390,7 +2392,7 @@
         </article>
       </div>
       <div class="cell" data-ring="11" data-hour="9">
-        <article class="blk" data-clubs="bergen-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:55 &middot; pulje 8/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2400,7 +2402,7 @@
             <li class="red" data-club="bergen-tkd"><span class="num">13</span><span class="nm">Irgens-Hansen Einar</span><span class="meta">Bergen TKD &middot; <b>ca. 09:33</b> &middot; kamp 13/20</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="bergen-tkd surnadal-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd surnadal-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 25%,var(--red) 25% 50%,var(--blue) 50% 75%,var(--red) 75% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:58&ndash;10:48 &middot; pulje 8/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2421,7 +2423,7 @@
       <div class="cell" data-ring="3" data-hour="10">
       </div>
       <div class="cell" data-ring="4" data-hour="10">
-        <article class="blk" data-clubs="alesund-tkd bergen-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="alesund-tkd bergen-tkd trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:01&ndash;10:53 &middot; pulje 1/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2432,7 +2434,7 @@
             <li class="blue" data-club="alesund-tkd"><span class="num">11</span><span class="nm">Perez-Rønneberg Era</span><span class="meta">Ålesund TKD &middot; <b>ca. 10:28</b> &middot; kamp 11/19</span></li>
           </ul>
         </article>
-        <article class="blk" data-clubs="alesund-tkd arendal-tkd vardo-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="alesund-tkd arendal-tkd vardo-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:56&ndash;11:44 &middot; pulje 1/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2447,7 +2449,7 @@
       <div class="cell" data-ring="5" data-hour="10">
       </div>
       <div class="cell" data-ring="6" data-hour="10">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:13&ndash;11:05 &middot; pulje 3/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2459,7 +2461,7 @@
         </article>
       </div>
       <div class="cell" data-ring="7" data-hour="10">
-        <article class="blk" data-clubs="bergen-tkd christiania-tkd fana-tkd orkdal-tkd oslo-ost-tkd trondheim-tkd vardo-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd christiania-tkd fana-tkd orkdal-tkd oslo-ost-tkd trondheim-tkd vardo-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 14.29%,var(--blue) 14.29% 28.57%,var(--blue) 28.57% 42.86%,var(--blue) 42.86% 57.14%,var(--red) 57.14% 71.43%,var(--red) 71.43% 85.71%,var(--blue) 85.71% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:29&ndash;11:19 &middot; pulje 4/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2476,7 +2478,7 @@
         </article>
       </div>
       <div class="cell" data-ring="8" data-hour="10">
-        <article class="blk" data-clubs="oslo-ost-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="oslo-ost-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 50%,var(--red) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:01&ndash;10:53 &middot; pulje 5/8</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2490,7 +2492,7 @@
       <div class="cell" data-ring="9" data-hour="10">
       </div>
       <div class="cell" data-ring="10" data-hour="10">
-        <article class="blk" data-clubs="oslo-ost-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="oslo-ost-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:53&ndash;11:37 &middot; pulje 3/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2507,7 +2509,7 @@
       <div class="cell" data-ring="1" data-hour="11">
       </div>
       <div class="cell" data-ring="2" data-hour="11">
-        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:37&ndash;12:14 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2522,7 +2524,7 @@
       <div class="cell" data-ring="4" data-hour="11">
       </div>
       <div class="cell" data-ring="5" data-hour="11">
-        <article class="blk" data-clubs="skien-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="skien-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 50%,var(--blue) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:42&ndash;12:48 &middot; pulje 2/2</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2534,7 +2536,7 @@
         </article>
       </div>
       <div class="cell" data-ring="6" data-hour="11">
-        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="royken-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:58&ndash;12:42 &middot; pulje 2/2</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2545,7 +2547,7 @@
         </article>
       </div>
       <div class="cell" data-ring="7" data-hour="11">
-        <article class="blk" data-clubs="alesund-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="alesund-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:22&ndash;12:08 &middot; pulje 4/4</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2556,7 +2558,7 @@
         </article>
       </div>
       <div class="cell" data-ring="8" data-hour="11">
-        <article class="blk" data-clubs="alesund-tkd royken-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="alesund-tkd royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 33.33%,var(--blue) 33.33% 66.67%,var(--red) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:46&ndash;12:48 &middot; pulje 1/2</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2569,7 +2571,7 @@
         </article>
       </div>
       <div class="cell" data-ring="9" data-hour="11">
-        <article class="blk" data-clubs="christiania-tkd royken-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="christiania-tkd royken-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:40&ndash;12:40 &middot; pulje 2/2</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2581,7 +2583,7 @@
         </article>
       </div>
       <div class="cell" data-ring="10" data-hour="11">
-        <article class="blk" data-clubs="arendal-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="arendal-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:41&ndash;12:39 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2619,7 +2621,7 @@
       <div class="cell" data-ring="6" data-hour="12">
       </div>
       <div class="cell" data-ring="7" data-hour="12">
-        <article class="blk" data-clubs="arendal-tkd oslo-ost-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="arendal-tkd oslo-ost-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--red) 0% 50%,var(--blue) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">12:11&ndash;12:57 &middot; pulje 1/2</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2640,7 +2642,7 @@
       </div>
       <div class="hr" data-hour="13">13:00</div>
       <div class="cell" data-ring="1" data-hour="13">
-        <article class="blk" data-clubs="alesund-tkd bergen-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="alesund-tkd bergen-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:39&ndash;15:43 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2652,7 +2654,7 @@
         </article>
       </div>
       <div class="cell" data-ring="2" data-hour="13">
-        <article class="blk" data-clubs="royken-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 50%,var(--red) 50% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:15&ndash;14:45 &middot; pulje 1/1</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2664,7 +2666,7 @@
         </article>
       </div>
       <div class="cell" data-ring="3" data-hour="13">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:25&ndash;16:27 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -2677,7 +2679,7 @@
         </article>
       </div>
       <div class="cell" data-ring="4" data-hour="13">
-        <article class="blk" data-clubs="oslo-ost-tkd trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="oslo-ost-tkd trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:55&ndash;16:24 &middot; pulje 2/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2689,7 +2691,7 @@
         </article>
       </div>
       <div class="cell" data-ring="5" data-hour="13">
-        <article class="blk" data-clubs="tromso-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="tromso-tkd trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:50&ndash;16:24 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2701,7 +2703,7 @@
         </article>
       </div>
       <div class="cell" data-ring="6" data-hour="13">
-        <article class="blk" data-clubs="fana-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="fana-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:45&ndash;15:35 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2716,7 +2718,7 @@
       <div class="cell" data-ring="8" data-hour="13">
       </div>
       <div class="cell" data-ring="9" data-hour="13">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:46&ndash;15:06 &middot; pulje 2/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2734,7 +2736,7 @@
       <div class="cell" data-ring="1" data-hour="14">
       </div>
       <div class="cell" data-ring="2" data-hour="14">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:49&ndash;16:04 &middot; pulje 4/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2753,7 +2755,7 @@
       <div class="cell" data-ring="6" data-hour="14">
       </div>
       <div class="cell" data-ring="7" data-hour="14">
-        <article class="blk" data-clubs="christiania-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="christiania-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:00&ndash;15:45 &middot; pulje 2/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2783,7 +2785,7 @@
       <div class="cell" data-ring="5" data-hour="15">
       </div>
       <div class="cell" data-ring="6" data-hour="15">
-        <article class="blk" data-clubs="arendal-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="arendal-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:38&ndash;16:14 &middot; pulje 3/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2794,7 +2796,7 @@
         </article>
       </div>
       <div class="cell" data-ring="7" data-hour="15">
-        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="oslo-ost-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:48&ndash;16:29 &middot; pulje 1/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2807,7 +2809,7 @@
       <div class="cell" data-ring="8" data-hour="15">
       </div>
       <div class="cell" data-ring="9" data-hour="15">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:10&ndash;16:30 &middot; pulje 3/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2818,7 +2820,7 @@
         </article>
       </div>
       <div class="cell" data-ring="10" data-hour="15">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:04&ndash;16:24 &middot; pulje 2/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2870,7 +2872,7 @@
       <div class="hd" data-ring="9"><a href="https://youtube.com/live/4KN5uOc3Uqo?feature=share" target="_blank" rel="noopener" title="Se ring 9 direkte">Ring 9 <span class="play">&#9654;</span></a></div>
       <div class="hr" data-hour="9">09:00</div>
       <div class="cell" data-ring="1" data-hour="9">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;10:13 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2881,7 +2883,7 @@
         </article>
       </div>
       <div class="cell" data-ring="2" data-hour="9">
-        <article class="blk" data-clubs="bergen-tkd royken-tkd trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd royken-tkd trondheim-tkd" style="--edge:var(--none);--edgebg:linear-gradient(to bottom,var(--blue) 0% 33.33%,var(--red) 33.33% 66.67%,var(--blue) 66.67% 100%)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:57 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2894,7 +2896,7 @@
         </article>
       </div>
       <div class="cell" data-ring="3" data-hour="9">
-        <article class="blk" data-clubs="melhus-taekwon-do-klubb moss-national-taekwon-do-klubb" style="--edge:var(--none)">
+        <article class="blk" data-clubs="melhus-taekwon-do-klubb moss-national-taekwon-do-klubb" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;11:58 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -2906,7 +2908,7 @@
         </article>
       </div>
       <div class="cell" data-ring="4" data-hour="9">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;10:13 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2917,7 +2919,7 @@
         </article>
       </div>
       <div class="cell" data-ring="5" data-hour="9">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;10:03 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2930,7 +2932,7 @@
       <div class="cell" data-ring="7" data-hour="9">
       </div>
       <div class="cell" data-ring="8" data-hour="9">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">09:00&ndash;09:32 &middot; pulje 1/1</div>
           <h3 class="cat">Mønster <span class="go">&#8599;</span></h3>
@@ -2946,7 +2948,7 @@
       <div class="cell" data-ring="1" data-hour="10">
       </div>
       <div class="cell" data-ring="2" data-hour="10">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">10:01&ndash;11:43 &middot; pulje 1/2</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -2984,7 +2986,7 @@
       <div class="cell" data-ring="8" data-hour="11">
       </div>
       <div class="cell" data-ring="9" data-hour="11">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">11:21&ndash;12:38 &middot; pulje 3/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -3009,7 +3011,7 @@
       <div class="cell" data-ring="2" data-hour="12">
       </div>
       <div class="cell" data-ring="3" data-hour="12">
-        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--none)">
+        <article class="blk" data-clubs="moss-national-taekwon-do-klubb" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">12:01&ndash;12:16 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -3031,7 +3033,7 @@
       </div>
       <div class="hr" data-hour="13">13:00</div>
       <div class="cell" data-ring="1" data-hour="13">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--blue);--edgebg:var(--blue)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:35&ndash;14:52 &middot; pulje 1/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -3044,7 +3046,7 @@
       <div class="cell" data-ring="2" data-hour="13">
       </div>
       <div class="cell" data-ring="3" data-hour="13">
-        <article class="blk" data-clubs="fana-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="fana-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:20&ndash;14:38 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -3055,7 +3057,7 @@
         </article>
       </div>
       <div class="cell" data-ring="4" data-hour="13">
-        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="bergen-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:30&ndash;16:02 &middot; pulje 2/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -3072,7 +3074,7 @@
       <div class="cell" data-ring="8" data-hour="13">
       </div>
       <div class="cell" data-ring="9" data-hour="13">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">13:40&ndash;16:12 &middot; pulje 2/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -3088,7 +3090,7 @@
       <div class="cell" data-ring="2" data-hour="14">
       </div>
       <div class="cell" data-ring="3" data-hour="14">
-        <article class="blk" data-clubs="arendal-tkd royken-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="arendal-tkd royken-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:41&ndash;15:53 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
@@ -3104,7 +3106,7 @@
       <div class="cell" data-ring="5" data-hour="14">
       </div>
       <div class="cell" data-ring="7" data-hour="14">
-        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red)">
+        <article class="blk" data-clubs="trondheim-tkd" style="--edge:var(--red);--edgebg:var(--red)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">14:40&ndash;16:47 &middot; pulje 4/4</div>
           <h3 class="cat">Sparring <span class="go">&#8599;</span></h3>
@@ -3124,7 +3126,7 @@
       <div class="cell" data-ring="2" data-hour="15">
       </div>
       <div class="cell" data-ring="3" data-hour="15">
-        <article class="blk" data-clubs="arendal-tkd" style="--edge:var(--none)">
+        <article class="blk" data-clubs="arendal-tkd" style="--edge:var(--none);--edgebg:var(--none)">
           <a class="open" href="https://www.sportdata.org/taekwondo_itf/set-online/veranstaltung_info_main.php?active_menu=calendar&amp;vernr=699&amp;ver_info_action=catauslist#a_eventheadend" target="_blank" rel="noopener"><span class="sr">Åpne trekningen</span></a>
           <div class="win">15:56&ndash;16:48 &middot; pulje 1/1</div>
           <h3 class="cat">Spesialteknikk <span class="go">&#8599;</span></h3>
