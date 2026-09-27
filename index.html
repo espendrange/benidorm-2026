@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Benidorm 2026</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=Public+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  :root{
+    --ground:#EDEFF3; --surface:#FFFFFF;
+    --ink:#151A22; --ink-2:#4A5361; --ink-3:#727C8B;
+    --rule:#D3D8E1; --rule-soft:#E4E8EF;
+    --red:#9E0000; --blue:#2947F9;
+    --shadow:0 1px 2px rgba(21,26,34,.06), 0 8px 20px -14px rgba(21,26,34,.35);
+    --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+    --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      color-scheme:dark;
+      --ground:#0F1219; --surface:#181D27;
+      --ink:#E8EBF2; --ink-2:#AEB7C5; --ink-3:#8791A0;
+      --rule:#2A313D; --rule-soft:#232A35;
+      --red:#D92B1F; --blue:#3B57FF;
+      --shadow:0 1px 2px rgba(0,0,0,.5), 0 10px 24px -16px rgba(0,0,0,.9);
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme:dark;
+    --ground:#0F1219; --surface:#181D27;
+    --ink:#E8EBF2; --ink-2:#AEB7C5; --ink-3:#8791A0;
+    --rule:#2A313D; --rule-soft:#232A35;
+    --red:#D92B1F; --blue:#3B57FF;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 10px 24px -16px rgba(0,0,0,.9);
+  }
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);
+       font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:44rem;margin:0 auto;padding-inline:20px;padding-block:52px 64px;}
+  .eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.14em;
+           text-transform:uppercase;color:var(--ink-3);margin:0 0 14px;}
+  h1{font-family:var(--display);font-variation-settings:"wdth" 118;font-weight:700;
+     font-size:clamp(2.4rem,9vw,3.8rem);line-height:.98;letter-spacing:-.015em;margin:0;}
+  .lede{margin:14px 0 0;max-width:40ch;color:var(--ink-2);}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));
+         gap:14px;margin:34px 0 0;}
+  a.card{display:block;background:var(--surface);border:1px solid var(--rule-soft);
+         border-left:5px solid var(--edge);border-radius:4px;box-shadow:var(--shadow);
+         padding:18px 18px 16px;text-decoration:none;color:inherit;
+         transition:border-color .15s, box-shadow .15s, transform .15s;}
+  a.card:hover{border-color:var(--edge);transform:translateY(-2px);}
+  a.card:focus-visible{outline:2px solid var(--edge);outline-offset:2px;}
+  .fana{--edge:var(--red);} .norge{--edge:var(--blue);}
+  .card h2{font-family:var(--display);font-variation-settings:"wdth" 112;font-weight:700;
+           font-size:1.4rem;margin:0;letter-spacing:-.01em;}
+  .card p{margin:6px 0 0;font-size:.88rem;color:var(--ink-2);}
+  .card .n{margin:12px 0 0;font-family:var(--mono);font-size:.72rem;color:var(--ink-3);}
+  footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--rule);
+         color:var(--ink-3);font-size:.8rem;}
+  footer p{margin:0 0 8px;max-width:58ch;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">10. ITF Taekwon-Do World Cup &middot; Benidorm, Spania</p>
+  <h1>Benidorm 2026</h1>
+  <p class="lede">Startlister for de norske, 29. september &ndash; 3. oktober. Trykk en ring for
+  gratis direktesending, eller en klasse for trekningen.</p>
+
+  <div class="cards">
+    <a class="card fana" href="fana.html">
+      <h2>Fana in the Ring</h2>
+      <p>Fana TKD alone, ring by ring, with each fighter&rsquo;s bout number, corner and estimated
+      time on the mat.</p>
+      <p class="n">18 starter &middot; 7 ut&oslash;vere &middot; engelsk</p>
+    </a>
+    <a class="card norge" href="norge.html">
+      <h2>Norge i ringen</h2>
+      <p>Alle norske starter, ring for ring og time for time, med klubb, hj&oslash;rne og
+      kampnummer.</p>
+      <p class="n">375 starter &middot; 193 ut&oslash;vere &middot; 21 klubber</p>
+    </a>
+  </div>
+
+  <footer>
+    <p>Bygget fra trekningen og poenglistene av 20. september 2026, kryssjekket mot den offisielle
+    tidsplanen. Anslagene for tid p&aring; matta er en pekepinn, ikke oppm&oslash;tetidspunkt.
+    Trekningen kan endres.</p>
+  </footer>
+</div>
+</body>
+</html>
