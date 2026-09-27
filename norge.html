@@ -4,20 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<style>:root{color-scheme:light}html{-webkit-text-size-adjust:100%}body{margin:0;font:14px system-ui,-apple-system,"Segoe UI",sans-serif;background:#EEF2F7}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>:root{color-scheme:light}html{-webkit-text-size-adjust:100%}body{margin:0;font:14px system-ui,-apple-system,"Segoe UI",sans-serif;background:#E7EDF5}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Norge i ringen</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=Public+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
   :root{
-    --ground:#EEF2F7; --surface:#FFFFFF; --sunken:#DFE8F1;
+    --ground:#E7EDF5; --surface:#FFFFFF; --sunken:#DFE8F1;
     --ink:#0C1B29; --ink-2:#40566B; --ink-3:#6E8399;
-    --rule:#CFDAE5; --rule-soft:#E2E9F1;
+    --rule:#C3D1E0; --rule-soft:#D6E0EC;
     --red:#9E0000; --blue:#2947F9; --none:#6B7488; --live:#C8201B;
     --red-ink:#9E0000; --blue-ink:#2947F9;
     --shadow:0 1px 2px rgba(21,26,34,.06), 0 6px 16px -13px rgba(21,26,34,.4);
     --ppm:3;
-    --navy:#0C1B29; --sky:#7FC0EA; --brand:#2E7EB5; --band:#DFE8F1;
+    --navy:#0C1B29; --sky:#7FC0EA; --brand:#2E7EB5;
+    --band:#DCE5F0; --band-2:#D2DDEB;
     --display:"Archivo","Helvetica Neue",Arial,sans-serif;
     --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
     --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
@@ -25,21 +26,21 @@
   @media (prefers-color-scheme:dark){
     :root:not([data-theme="light"]){
       color-scheme:dark;
-      --ground:#0B1724; --surface:#12283A; --sunken:#17324A;
+      --ground:#0A1522; --surface:#16304A; --sunken:#17324A;
       --ink:#E8EFF6; --ink-2:#A8BCCE; --ink-3:#7E93A8;
-      --rule:#24405A; --rule-soft:#1C3449;
+      --rule:#2D4E70; --rule-soft:#27486A;
       --red:#D92B1F; --blue:#3B57FF; --none:#7D879A; --live:#FF4A3D;
-      --red-ink:#FF6E60; --blue-ink:#8AA0FF; --brand:#6FB4E2; --band:#15293C; --band:#15293C; --brand:#6FB4E2;
+      --red-ink:#FF6E60; --blue-ink:#8AA0FF; --brand:#6FB4E2; --band:#0B1826; --band-2:#0F2132; --band:#15293C; --brand:#6FB4E2;
       --shadow:0 1px 2px rgba(0,0,0,.5), 0 8px 20px -15px rgba(0,0,0,.9);
     }
   }
   :root[data-theme="dark"]{
     color-scheme:dark;
-    --ground:#0B1724; --surface:#12283A; --sunken:#17324A;
+    --ground:#0A1522; --surface:#16304A; --sunken:#17324A;
     --ink:#E8EFF6; --ink-2:#A8BCCE; --ink-3:#7E93A8;
-    --rule:#24405A; --rule-soft:#1C3449;
+    --rule:#2D4E70; --rule-soft:#27486A;
     --red:#D92B1F; --blue:#3B57FF; --none:#7D879A; --live:#FF4A3D;
-    --red-ink:#FF6E60; --blue-ink:#8AA0FF; --brand:#6FB4E2; --band:#15293C;
+    --red-ink:#FF6E60; --blue-ink:#8AA0FF; --brand:#6FB4E2; --band:#0B1826; --band-2:#0F2132;
     --shadow:0 1px 2px rgba(0,0,0,.5), 0 8px 20px -15px rgba(0,0,0,.9);
   }
 
@@ -92,9 +93,11 @@
                 text-transform:uppercase;color:var(--brand);}
   .daymeta{font-family:var(--mono);font-size:.76rem;color:var(--ink-3);margin:0 0 12px;}
 
-  .scroll{overflow-x:auto;padding-bottom:6px;}
+  .scroll{overflow:auto;max-height:min(82vh,1500px);overscroll-behavior:contain;
+          border:1px solid var(--rule-soft);border-radius:4px;background:var(--ground);}
   .grid{display:grid;gap:0;}
   .hd{position:sticky;top:0;z-index:4;background:var(--ground);pointer-events:none;
+      box-shadow:0 1px 0 var(--rule);
       font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.1em;
       text-transform:uppercase;color:var(--ink-3);padding:4px 0 7px 8px;
       border-bottom:1px solid var(--rule);}
@@ -109,20 +112,24 @@
   .gala{display:inline-flex;align-items:center;gap:5px;margin-left:10px;color:var(--live);
         text-decoration:none;font-weight:600;}
   .gala:hover{text-decoration:underline;text-underline-offset:2px;}
-  .gutter{position:sticky;left:0;z-index:2;background:var(--ground);margin-top:9px;
+  .gutter{position:sticky;left:0;z-index:3;background:var(--ground);margin-top:9px;
+          box-shadow:1px 0 0 var(--rule-soft);
           pointer-events:none;}
   .gutter b{position:absolute;right:9px;transform:translateY(-.55em);font-family:var(--mono);
             font-size:.68rem;font-weight:500;color:var(--ink-3);font-variant-numeric:tabular-nums;}
   .track{position:relative;margin-top:9px;border-left:1px solid var(--rule-soft);
          background-image:repeating-linear-gradient(to bottom,
            var(--rule-soft) 0 1px, transparent 1px calc(60 * var(--ppm) * 1px));}
-  .lunch{position:absolute;left:0;right:0;background:var(--band);
-         border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
-         display:flex;align-items:center;justify-content:center;pointer-events:none;}
-  .lunch span{font-family:var(--mono);font-size:.64rem;letter-spacing:.06em;
-              text-transform:uppercase;color:var(--ink-3);}
+  .lunch{position:absolute;left:0;right:0;pointer-events:none;
+         background:repeating-linear-gradient(45deg,
+           var(--band) 0 7px, var(--band-2) 7px 14px);
+         border-top:1px dashed var(--rule);border-bottom:1px dashed var(--rule);
+         display:flex;align-items:center;justify-content:center;}
+  .lunch span{font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;
+              text-transform:uppercase;color:var(--ink-2);background:var(--ground);
+              padding:2px 8px;border-radius:2px;}
   .blk{position:absolute;left:3px;right:3px;background:var(--surface);
-       border:1px solid var(--rule-soft);border-radius:3px;box-shadow:var(--shadow);
+       border:1px solid var(--rule);border-radius:4px;box-shadow:var(--shadow);
        padding:5px 8px 4px;overflow:hidden;transition:box-shadow .15s,border-color .15s;}
   .blk:hover{border-color:var(--ink-3);
              box-shadow:0 2px 4px rgba(0,0,0,.09),0 10px 22px -14px rgba(0,0,0,.35);}
