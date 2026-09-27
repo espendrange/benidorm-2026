@@ -132,6 +132,7 @@
   .blk:hover{border-color:var(--ink-3);
              box-shadow:0 2px 4px rgba(0,0,0,.09),0 10px 22px -14px rgba(0,0,0,.35);}
   .blk.mid .cat, .blk.min .cat{font-size:.72rem;}
+  .blk.adapted{border-style:dashed;}
   .tinyrow{display:flex;align-items:center;gap:4px;height:19px;}
   .tinyrow .cat{flex:1;font-size:.68rem;font-weight:700;white-space:nowrap;overflow:hidden;
                 text-overflow:ellipsis;margin:0;}
@@ -181,10 +182,10 @@
     <h1>Norge i ringen</h1>
     <p class="lede">Alle norske starter i trekningen &mdash; ring for ring, time for time, med klubb, hj&oslash;rne og kampnummeret som avgj&oslash;r hvor lenge det er &aring; vente.</p>
     <dl class="facts">
-      <div><dt>Utøvere</dt><dd>193</dd></div>
-      <div><dt>Starter</dt><dd>375</dd></div>
-      <div><dt>Klubber</dt><dd>21</dd></div>
-      <div><dt>Klasser</dt><dd>127</dd></div>
+      <div><dt>Utøvere</dt><dd>195</dd></div>
+      <div><dt>Starter</dt><dd>378</dd></div>
+      <div><dt>Klubber</dt><dd>22</dd></div>
+      <div><dt>Klasser</dt><dd>130</dd></div>
       <div><dt>Dager</dt><dd>29. sep&ndash;3. okt</dd></div>
     </dl>
     <div class="key">
@@ -193,11 +194,12 @@
       <span><i class="num">9</i> uten hj&oslash;rne &mdash; teknikk&oslash;velse</span>
       <span>ca. = anslag for n&aring;r ut&oslash;veren er p&aring; matta</span>
       <span><span class="play">&#9654;</span> klikk ringnavnet for gratis direktesending</span>
+      <span>Stiplet ramme = Adapted World Cup (egen trekning)</span>
     </div>
   </header>
   <nav class="filters" aria-label="Filtrer på klubb">
     <span class="flabel">Vis klubb</span>
-    <button class="chip" type="button" data-club="alle" aria-pressed="true">Alle klubber<span class="n">375</span></button>
+    <button class="chip" type="button" data-club="alle" aria-pressed="true">Alle klubber<span class="n">378</span></button>
     <button class="chip" type="button" data-club="trondheim-tkd" aria-pressed="false">Trondheim TKD<span class="n">106</span></button>
     <button class="chip" type="button" data-club="bergen-tkd" aria-pressed="false">Bergen TKD<span class="n">47</span></button>
     <button class="chip" type="button" data-club="royken-tkd" aria-pressed="false">Røyken TKD<span class="n">40</span></button>
@@ -214,11 +216,12 @@
     <button class="chip" type="button" data-club="gauldal-taekwon-do-klubb" aria-pressed="false">Gauldal Taekwon-Do Klubb<span class="n">7</span></button>
     <button class="chip" type="button" data-club="orkdal-tkd" aria-pressed="false">Orkdal TKD<span class="n">6</span></button>
     <button class="chip" type="button" data-club="tromso-tkd" aria-pressed="false">Tromsø TKD<span class="n">5</span></button>
+    <button class="chip" type="button" data-club="vaernes-tkd" aria-pressed="false">Værnes TKD<span class="n">5</span></button>
     <button class="chip" type="button" data-club="skien-tkd" aria-pressed="false">Skien TKD<span class="n">4</span></button>
-    <button class="chip" type="button" data-club="vaernes-tkd" aria-pressed="false">Værnes TKD<span class="n">3</span></button>
     <button class="chip" type="button" data-club="bryne-tkd" aria-pressed="false">Bryne TKD<span class="n">3</span></button>
     <button class="chip" type="button" data-club="asker-tkd" aria-pressed="false">Asker TKD<span class="n">2</span></button>
     <button class="chip" type="button" data-club="itf-aal-taekwon-do-klubb" aria-pressed="false">ITF Aal Taekwon-Do klubb<span class="n">2</span></button>
+    <button class="chip" type="button" data-club="tonsberg-tkd" aria-pressed="false">Tønsberg TKD<span class="n">1</span></button>
   </nav>
   <p class="none" id="ingen" hidden>Ingen starter for den klubben.</p>
   <section class="day">
@@ -637,7 +640,7 @@
   </section>
   <section class="day">
     <div class="dayhead"><span class="tag">Dag 2</span><h2>Onsdag 30. september</h2></div>
-    <p class="daymeta">93 starter i 49 puljer &middot; ring 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11</p>
+    <p class="daymeta">96 starter i 52 puljer &middot; ring 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11</p>
     <div class="scroll"><div class="grid" data-cols="11" style="grid-template-columns:52px repeat(11,minmax(176px,1fr))">
       <div class="hd corner"></div>
       <div class="hd" data-ring="1"><a href="https://youtube.com/live/sELspm7HctA?feature=share" target="_blank" rel="noopener" title="Se ring 1 direkte">Ring 1 <span class="play">&#9654;</span></a></div>
@@ -817,6 +820,22 @@
             <li class="red" data-club="itf-aal-taekwon-do-klubb"><span class="num">3</span><span class="nm">Li Selma</span><span class="meta">ITF Aal Taekwon-Do klubb &middot; <b>ca. 11:04</b> &middot; kamp 3/19</span></li>
           </ul>
         </article>
+        <article class="blk full adapted" data-clubs="tonsberg-tkd" style="top:1305.0px;height:87.0px" title="1 Opedal Torfinn Katla (Tønsberg TKD)">
+          <div class="win">16:15&ndash;16:24 &middot; pulje 1/1</div>
+          <h3 class="cat">Tilpasset mønster</h3>
+          <p class="sub">M &middot; 1.&ndash;3. Dan</p>
+          <ul class="ppl">
+            <li class="red" data-club="tonsberg-tkd"><span class="num">1</span><span class="nm">Opedal Torfinn Katla</span><span class="meta">Tønsberg TKD &middot; <b>ca. 16:15</b> &middot; kamp 1/1</span></li>
+          </ul>
+        </article>
+        <article class="blk full adapted" data-clubs="vaernes-tkd" style="top:1401.0px;height:87.0px" title="2 Steinkjer Sonja-Marie (Værnes TKD)">
+          <div class="win">16:47&ndash;17:04 &middot; pulje 1/1</div>
+          <h3 class="cat">Tilpasset frie ferdigheter</h3>
+          <p class="sub">4.&ndash;1. Gup</p>
+          <ul class="ppl">
+            <li class="blue" data-club="vaernes-tkd"><span class="num">2</span><span class="nm">Steinkjer Sonja-Marie</span><span class="meta">Værnes TKD &middot; <b>ca. 16:56</b> &middot; kamp 2/2</span></li>
+          </ul>
+        </article>
       </div>
       <div class="track" data-ring="5" style="height:1710px">
         <div class="lunch" style="top:606.0px;height:189.0px"><span>Lunsj 12:22&ndash;13:25</span></div>
@@ -836,6 +855,14 @@
           <p class="sub">M 12-14 år &middot; 4.&ndash;1. Gup &middot; &minus;60 kg</p>
           <ul class="ppl">
             <li class="blue" data-club="surnadal-tkd"><span class="num">12</span><span class="nm">Fiske  Jonas Bruvold</span><span class="meta">Surnadal TKD &middot; <b>ca. 14:05</b> &middot; kamp 12/27</span></li>
+          </ul>
+        </article>
+        <article class="blk full adapted" data-clubs="vaernes-tkd" style="top:1149.0px;height:87.0px" title="1 Steinkjer Sonja-Marie (Værnes TKD)">
+          <div class="win">15:23&ndash;15:40 &middot; pulje 1/1</div>
+          <h3 class="cat">Tilpasset mønster</h3>
+          <p class="sub">4.&ndash;1. Gup</p>
+          <ul class="ppl">
+            <li class="red" data-club="vaernes-tkd"><span class="num">1</span><span class="nm">Steinkjer Sonja-Marie</span><span class="meta">Værnes TKD &middot; <b>ca. 15:23</b> &middot; kamp 1/3</span></li>
           </ul>
         </article>
       </div>
